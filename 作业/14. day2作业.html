@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// 1. 打印0-20之间的整数，将每个数输出到页面
+
+			// num = 0;
+			// while (num < 20) {
+			// 	num++;
+			//   document.write(`这是第${num}个数字 <br>`)
+			// }
+
+			// 2. 计算1-1000之间的累加和，并且打印输出到页面中
+
+			// num = 0;
+			// num1 = 0;
+			// while (num < 1000) {
+			// 	num++;
+			// 	num1 += num;
+			// 	document.write(`这是第${num}个数字 <br>`);
+			// }
+			// document.write(`它们的和是${num1} <br>`)
+
+			// 3. 页面依次打印100-200之间，可以被6整除的数字
+
+			// num = 100
+			// while (num < 200) {
+			//   num++
+			//   if (num % 6 === 0) {
+			//     document.write(`能够被6整除的有${num} <br>`)
+			//   }
+			// }
+
+			// 4. 用户弹窗输入两个数字，页面输出数字中的最大值（三元运算符）
+
+			// num1 = +prompt("请输入第一个数字")
+			// num2 = +prompt("请输入第二个数字")
+			// num1 > num2 ? alert(`最大数字为${num1}`) : alert(`最大数字为${num2}`)
+
+			// 5. 用户输入一个数，计算1到这个数的累加和
+
+			// num = 0;
+			// num1 = 0;
+			// num2 = +prompt("请输入数字：");
+			// while (num < num2) {
+			// 	num++;
+			//   num1 += num;
+			// }
+			// alert(`1 - ${num2} 的累计和为 ${num1}`)
+
+			// 6. 输出成绩案例(请使用if多分支来书写程序)
+
+			// num = +prompt('请输入你的分数')
+			// if (num >= 90) {
+			//   alert('A')
+			// }else if (num >= 80) {
+			//   alert('B')
+			// }else if (num >= 70) {
+			//   alert('C')
+			// }else if (num >= 60) {
+			//   alert('D')
+			// }else {
+			//   alert('E')
+			// }
+
+			// 7. 输出星期练习 (使用switch分支语句来书写程序)
+
+			// num = +prompt('请输入星期：')
+			// switch (num) {
+			//   case 1:
+			//     alert('Monday')
+			//     break;
+
+			//   case 2:
+			//     alert('Tuesday')
+			//     break;
+
+			//   case 3:
+			//     alert('Wednesday')
+			//     break;
+
+			//   case 4:
+			//     alert('Thursday')
+			//     break;
+
+			//   case 5:
+			//     alert('Friday')
+			//     break;
+
+			//   case 6:
+			//     alert('Saturday')
+			//     break;
+
+			//   case 7:
+			//     alert('Sunday')
+			//     break;
+
+			//   default:
+			//     alert('没有找到！请重新输入')
+			//     break;
+			// }
+
+			// 8. 用户登录验证
+
+			// while (true) {
+			// 	username = prompt("请输入用户名：");
+			// 	password = prompt("请输入密码：");
+			// 	if (username === "admin" && password === "123456") {
+			// 		alert("登录成功");
+			// 		break;
+			// 	}
+			// }
+
+			// 9. 综合案例变形
+			while (true) {
+				cd = prompt(`
+        1. 请输入 +-*/ 运算符来运算
+        2. 输入 q 退出程序`);
+
+				if (cd === "q") {
+					break;
+				}
+				switch (cd) {
+					case "+":
+						num1 = +prompt("请输入第一个数字");
+						num2 = +promp("请输入第二个数字");
+						alert(`${num1} + ${num2} = ${num1 + num2}`);
+						break;
+
+					case "-":
+						num1 = +prompt("请输入第一个数字");
+						num2 = +prompt("请输入第二个数字");
+						alert(`${num1} - ${num2} = ${num1 - num2}`);
+						break;
+
+					case "*":
+						num1 = +prompt("请输入第一个数字");
+						num2 = +prompt("请输入第二个数字");
+						alert(`${num1} X ${num2} = ${num1 * num2}`);
+						break;
+
+					case "/":
+						num1 = +prompt("请输入第一个数字");
+						num2 = +prompt("请输入第二个数字");
+						alert(`${num1} ÷ ${num2} = ${num1 / num2}`);
+						break;
+
+					default:
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let score = prompt("请输入你的成绩：");
+      if (score === NaN || score === "") {
+        alert("输入不能为空");
+      } else if (isNaN(score)) {
+        alert("您输入的好像不是数字");
+      } else if (score > 100) {
+        alert("请检查您的输入，满分为100分");
+      } else if (score >= 90) {
+        alert("您的成绩：优秀！");
+      } else if (score >= 70) {
+        alert("您的成绩：良好！");
+      } else if (score >= 60) {
+        alert("您的成绩：及格！");
+      } else if (score < 0) {
+        alert("抱歉，成绩没有负数！");
+      } else {
+        alert("您的成绩：不及格！");
+      }
+    </script>
+  </body>
+</html>

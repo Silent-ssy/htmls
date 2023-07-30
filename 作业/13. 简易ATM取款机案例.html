@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let balance = 1000;
+			while (true) {
+				let str = +prompt(
+					`请输入您的操作:
+            1.取款
+            2.存款
+            3.查看余额
+            4.退出`
+				);
+
+				switch (str) {
+					case 1:
+						let num = prompt(`请输入您需要取多少:`);
+						if (isNaN(num)) {
+							alert("请检查你的输入");
+							break;
+						} else if (balance < num) {
+							alert(`您的余额不足！`); 
+							break;
+						}
+						balance -= Number(num);
+						alert(`您的余额: ${balance}元`);
+						break;
+
+					case 2:
+						let num2 = prompt(`请输入您需要存多少:`);
+						if (isNaN(num2)) {
+							alert("请检查你的输入");
+							break;
+						}
+						balance += Number(num2);
+						alert(`您的余额: ${balance}元`);
+						break;
+
+					case 3:
+						alert(`您的余额: ${balance}元`);
+						break;
+
+					default:
+						break;
+				}
+				if (str === 4) {
+					break;
+				}
+			}
+		</script>
+	</body>
+</html>
