@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// 打印倒三角形 [利用循环嵌套] [外层控制打印行数，内层控制一行打印几个] [内层循环的个数跟第几行是一一对应的]
+			let hang1 = +prompt(`请输入需要打印几行`);
+			for (let i1 = 1; i1 <= hang1; i1++) {
+				for (let j1 = 1; j1 <= i1; j1++) {
+					document.write("★");
+				}
+				document.write("<br>");
+			}
+		</script>
+	</body>
+</html>

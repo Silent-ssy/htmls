@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.ysy {
+			display: inline-block;
+			padding: 10px;
+			background-color: rgb(255, 255, 255);
+			/* border: 0.5px solid rgb(66, 66, 66); */
+			margin: 3px;
+			height: 20px;
+			width: 80px;
+			border-radius: 5px;
+			box-shadow: 2px 2px 20px 2px rgb(255, 255, 255, 0.7);
+		}
+
+		.sp {
+			font-size: 50px;
+			color: rgb(255, 255, 255);
+			text-align: center;
+		}
+	</style>
+	<body style="background-color: rgb(91, 91, 91)">
+		<div><span class="sp">九九乘法表</span></div>
+		<script>
+			// 打印九九乘法表 [利用循环嵌套] [外层控制打印行数，内层控制一行打印几个] [内层循环的个数跟第几行是一一对应的]
+			for (let i = 1; i <= 9; i++) {
+				for (let j = 1; j <= i; j++) {
+					document.write(`<span class="ysy">${j} X ${i} = ${i * j}</span>`);
+				}
+				document.write("<br>");
+			}
+		</script>
+	</body>
+</html>
