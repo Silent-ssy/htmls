@@ -9,6 +9,8 @@
 		.ysy {
 			display: inline-block;
 			padding: 10px;
+			color: rgb(0, 0, 0, 0.8);
+			text-shadow: 1px 1px 2px rgb(139, 137, 137);
 			background-color: rgb(255, 255, 255);
 			/* border: 0.5px solid rgb(66, 66, 66); */
 			margin: 3px;
@@ -16,16 +18,24 @@
 			width: 80px;
 			border-radius: 5px;
 			box-shadow: 2px 2px 20px 2px rgb(255, 255, 255, 0.7);
+			text-align: center;
 		}
 
 		.sp {
-			font-size: 50px;
-			color: rgb(255, 255, 255);
+			margin-top: 50px;
+			height: 50px;
+			text-shadow: 10px 6px 5px #ffffff5c;
+			color: #ffffff;
+			font-weight: 600;
 			text-align: center;
+			font-size: 24px;
 		}
 	</style>
 	<body style="background-color: rgb(91, 91, 91)">
-		<div><span class="sp">九九乘法表</span></div>
+		<div class="sp">
+			<h1>九九乘法表</h1>
+		</div>
+		<br />
 		<script>
 			// 打印九九乘法表 [利用循环嵌套] [外层控制打印行数，内层控制一行打印几个] [内层循环的个数跟第几行是一一对应的]
 			for (let i = 1; i <= 9; i++) {
