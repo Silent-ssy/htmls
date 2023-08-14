@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,14 @@
 	<body>
 		<script>
 			let arr = ["a", "b", "c", "d", "e"];
-			arr.push("pink");
+			// 新增 后
+			// arr.push("pink");
+			console.log(arr);
+			console.log(arr.push("pink")); // 打印数组新的长度 6
+			arr.push("pink", "windows");
+
+			// 新增 前
+			arr.unshift("pink", "windows");
 			console.log(arr);
 		</script>
 	</body>

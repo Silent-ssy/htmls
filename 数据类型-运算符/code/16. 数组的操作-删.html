@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let arr = [32, 2, 0, 8, 19, 0, 66, 0, 54, 6];
+
+			// 删除最后一个元素
+			arr.pop();
+			console.log(arr.pop()); // 返回删除的元素 54
+
+			// 删除前面一个的元素
+			arr.shift();
+			console.log(arr.shift()); // 返回删除的元素 2
+
+			// 删除其中一个的元素
+			// arr.splice(起始位置, 删除几个元素)
+			arr.splice(0, 1);
+			console.log(arr);
+		</script>
+	</body>
+</html>
