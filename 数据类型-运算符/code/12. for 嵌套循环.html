@@ -5,19 +5,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
-  <style>
-    body{ 
-      padding: 0;
-      margin: 0;
-    }
-  </style>
-	<body >
-    
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+	<body>
 		<script>
 			for (let i = 1; i < 4; i++) {
 				document.write(`第${i}天 </br>`);
 				for (let j = 1; j < 6; j++) {
-					document.write(`<span style="padding-left:20px;"><span>我记住了${j}个单词 </br>`);
+					document.write(
+						`<span style="padding-left:20px;"><span>我记住了${j}个单词 </br>`
+					);
 				}
 			}
 		</script>
